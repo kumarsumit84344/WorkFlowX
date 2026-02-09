@@ -1,0 +1,303 @@
+project: WorkFlowX
+generated: 2026-02-09
+legend:
+  todo: "To Do"
+  in_progress: "In Progress"
+  completed: "Completed"
+
+epics:
+  - id: EPIC-0
+    title: "Project Setup & Foundation"
+    tasks:
+      - id: WF-0.1
+        title: "Initialize Angular Project"
+        description: "Create a new Angular application with routing and SCSS/CSS."
+        status: "Completed"
+        owner: ""
+        updated: 2026-02-09
+      - id: WF-0.2
+        title: "Setup Git & GitHub Repository"
+        description: "Initialize Git locally, create a GitHub repository, push initial Angular setup, add .gitignore." 
+        status: "Completed"
+        owner: ""
+        updated: 2026-02-09
+      - id: WF-0.3
+        title: "Configure Environment Files"
+        description: "Set up environment.ts and environment.prod.ts for dev and prod configuration."
+        status: "Completed"
+        owner: ""
+        updated: 2026-02-09
+
+  - id: EPIC-1
+    title: "Core Architecture"
+    tasks:
+      - id: WF-1.1
+        title: "Create Core & Shared Modules"
+        description: "CoreModule for singleton services; SharedModule for reusable components, pipes, directives."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-1.2
+        title: "Setup Lazy-Loaded Feature Modules"
+        description: "Lazy-load Auth, Dashboard, Projects, Tasks, Admin, Settings."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-1.3
+        title: "Implement App Layout Structure"
+        description: "Header, Sidebar, Footer, Content area with router outlet."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-2
+    title: "Authentication & Authorization"
+    tasks:
+      - id: WF-2.1
+        title: "Build Login UI"
+        description: "Responsive login page with reactive forms and validation."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-2.2
+        title: "Implement Authentication Service"
+        description: "AuthService for login/logout, token storage, session management."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-2.3
+        title: "Add HTTP Interceptor for Auth"
+        description: "Attach JWT to requests and handle 401 globally."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-2.4
+        title: "Implement Role-Based Route Guards"
+        description: "Protect routes based on Admin/Manager/Team Member roles."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-3
+    title: "User & Team Management (Admin)"
+    tasks:
+      - id: WF-3.1
+        title: "User Management UI"
+        description: "Admin UI to list, create, edit, deactivate users and assign roles."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-3.2
+        title: "Team & Department Management"
+        description: "Create teams/departments and assign users."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-3.3
+        title: "Role Assignment Logic"
+        description: "Assign/update roles and reflect permissions across the app."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-4
+    title: "Project Management"
+    tasks:
+      - id: WF-4.1
+        title: "Create Project Module"
+        description: "Module with routing, components, and services."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-4.2
+        title: "Project CRUD Operations"
+        description: "Create, update, delete projects with dates and assigned teams."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-4.3
+        title: "Project Progress Tracking"
+        description: "Display project progress based on task completion percentage."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-5
+    title: "Task Management (Core Feature)"
+    tasks:
+      - id: WF-5.1
+        title: "Task Data Model"
+        description: "Define title, description, priority, status, due date, assignee, tags."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-5.2
+        title: "Task CRUD Operations"
+        description: "Create, update, delete, and view tasks with permissions."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-5.3
+        title: "Workflow Status Board (Kanban)"
+        description: "Drag-and-drop Kanban for To Do → In Progress → Review → Completed."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-5.4
+        title: "Bulk Task Operations"
+        description: "Bulk updates for status, assignee, priority."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-6
+    title: "Workflow Engine"
+    tasks:
+      - id: WF-6.1
+        title: "Define Workflow Rules"
+        description: "Allowed status transitions based on roles."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-6.2
+        title: "Approval & Rejection Flow"
+        description: "Managers approve/reject tasks with comments."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-6.3
+        title: "Audit Log for Status Changes"
+        description: "History of status changes with user and timestamp."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-7
+    title: "Collaboration & Communication"
+    tasks:
+      - id: WF-7.1
+        title: "Task Comments System"
+        description: "Threaded comments on tasks."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-7.2
+        title: "Mentions & Notifications"
+        description: "Allow @mentions and notify users."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-7.3
+        title: "File Attachments"
+        description: "Upload and view task-related attachments."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-8
+    title: "Dashboards & Analytics"
+    tasks:
+      - id: WF-8.1
+        title: "User Dashboard"
+        description: "Assigned tasks, deadlines, daily workload."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-8.2
+        title: "Manager Dashboard"
+        description: "Team workload, overdue tasks, charts."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-8.3
+        title: "Admin Dashboard"
+        description: "Organization-level metrics and trends."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-9
+    title: "Notifications System"
+    tasks:
+      - id: WF-9.1
+        title: "In-App Notification Panel"
+        description: "Center for assignments, status changes, reminders."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-9.2
+        title: "Real-Time Notification Simulation"
+        description: "Simulate real-time updates via RxJS/WebSocket."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-10
+    title: "Search, Filters & Performance"
+    tasks:
+      - id: WF-10.1
+        title: "Global Search"
+        description: "Search across projects and tasks by keyword."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-10.2
+        title: "Advanced Filters"
+        description: "Filter by status, priority, assignee, due date."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-10.3
+        title: "Performance Optimization"
+        description: "OnPush, trackBy, pagination, caching."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-11
+    title: "Settings & Preferences"
+    tasks:
+      - id: WF-11.1
+        title: "Profile Management"
+        description: "Update personal info and preferences."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-11.2
+        title: "Theme Management"
+        description: "Light/Dark mode with persisted preference."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-11.3
+        title: "Notification Preferences"
+        description: "Control which notifications are received."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+  - id: EPIC-12
+    title: "Quality & Advanced Features"
+    tasks:
+      - id: WF-12.1
+        title: "State Management (NgRx / Signals)"
+        description: "Centralized state for tasks, projects, users."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-12.2
+        title: "Unit Testing"
+        description: "Unit tests for services, components, guards."
+        status: "To Do"
+        owner: ""
+        updated: ""
+      - id: WF-12.3
+        title: "PWA & Offline Support (Optional)"
+        description: "Offline access and caching using PWA features."
+        status: "To Do"
+        owner: ""
+        updated: ""
+
+notes: |
+  To update progress: set `status` to one of (To Do, In Progress, Completed),
+  assign `owner`, and set `updated` to YYYY-MM-DD.
