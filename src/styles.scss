@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global reset and layout helpers */
+*,*::before,*::after{box-sizing:border-box}
+html,body,app-root{height:100%;margin:0;padding:0}
+body{font-family:Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background:#fff;color:#111}
+
+/* Ensure the main login container doesn't force an extra viewport scroll */
+.login-container{min-height:100vh;overflow:hidden}
+
+/* Allow vertical scrolling on narrow viewports so content isn't clipped */
+@media (max-width: 900px) {
+	.login-container { overflow: auto; }
+}
+
+/* Small utility to allow scrolling when needed on small screens */
+.login-container--scrollable{overflow:auto}

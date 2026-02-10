@@ -1,9 +1,20 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  isLoginMode = true;
+
+  constructor(private router: Router) {}
+
+  goToSignup() {
+    this.router.navigate(['/auth/signup']);
+  }
 }
